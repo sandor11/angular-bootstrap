@@ -22,6 +22,13 @@ module.exports = function (config) {
     angularCli: {
       environment: 'dev'
     },
+    files: [
+      {
+        pattern: './node_modules/@angular/material/prebuilt-themes/indigo-pink.css',
+        included: true,
+        watched: true
+      }
+    ],
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
